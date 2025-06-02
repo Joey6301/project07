@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    position: relative;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.top-bar {
+	display: flex;
+	justify-content: space-between;
+}
+.left-bar {
+	margin-top: 20px;
+}
+.top-bar img {
+    width: 200px;
+	vertical-align: middle;
+
+}
+.left-bar span {
+	font-size: 15px;
+	margin-right: 30px;
+	vertical-align: middle;
+}
+.left-bar span a {
+	text-decoration: none;
+	color: black;
+}
+.left-bar span a:hover {
+	color: #EF5B12;
+}
+.left-bar > span:first-of-type {
+    margin-left: 20px;
+}
+.right-bar {
+	margin-top: 40px;
+	margin-right: 30px;
+}
+.right-bar .login {
+	width: 17px;
+	padding-right: 6px;
+}
+.right-bar .cart {
+	width: 25px;
+}
+.main {
+    text-align: center;
+    margin-top: 100px;
+}
+.main h1 {
+    font-size: 60px;
+}
+.main>p {
+    font-size: 20px;
+    margin: 30px 0;
+}
+.main form {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+.main form label {
+    font-size: 17px;
+    width: 32%;
+    display: block;
+    text-align: left;
+    margin-bottom: -20px; 
+}
+.main form input {
+    width: 230px;
+    height: 25px;
+}
+.main form button {
+    width: 150px;
+    height: 35px;
+    background-color: #EF5B12;
+    color: white;
+    border: none;
+    cursor: pointer;
+	font-size: 12px;
+}
+.main form button:hover {
+    background-color: #d45500;
+    color: #fff;
+}
+.helper {
+    font-size: 16px;
+    margin-top: -20px;
+}
+.helper p:last-child {
+    margin-top: 7px;
+}
+.main .helper a {
+    text-decoration: none;
+    color: #EF5B12;
+}
+.main .helper a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #FFF9F5;
+	width: 100%;
+	height: 370px;
+    margin-top: 100px;
+}
+.footer-left {
+	display: flex;
+	margin-left: 80px;
+}
+.footer-left .about,
+.footer-left .support,
+.footer-left .discover {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	font-size: 14px;
+}
+.footer-left .discover {
+	gap: 25px;
+	margin: 0 50px;
+}
+.footer-left h5 {
+	font-size: 15px;
+}
+.footer-left a {
+	text-decoration: none;
+	color: black;
+}
+.footer-left a:hover {
+	color:#EF5B12;
+}
+.footer .footer-right {
+	padding-right: 30px
+}
+.footer .footer-right p:first-of-type {
+	color:#EF5B12;
+	font-size: 30px;
+	width: 500px
+}
+.footer .footer-right p:nth-of-type(2) {
+	font-size: 18px;
+	margin: 15px 0;
+	width: 480px;
+}
+.footer-right input {
+	width: 250px;
+	height: 45px;
+	background-color: white;
+	border: none;
+}
+.footer-right button {
+	background-color: black;
+	width: 120px;
+	height: 45px;
+	color: white;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+	margin-left: 4px;
+}
+.footer-right .icon img{
+	margin-top: 15px;
+	height: 22px;
+}
