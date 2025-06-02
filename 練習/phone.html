@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            font-size: 42px;
+            text-align: center;
+        }
+        .box * { display: none;}
+        .nohover {
+            display: block;
+        }
+        @media screen and (orientation: portrait) {
+            .v { display: block;}
+        }
+        
+        @media screen and (orientation: landscape) {
+            .h { display: block;}
+        }
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            .w1024 { display: block;}
+        }
+        @media screen and (hover:hover) {
+            .nohover {display: none;}
+            .hover {
+                display: block;
+            }
+        }
+
+        .btn:hover {
+            background-color: #fa0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="v">手機現在是直向</div>
+        <div class="h">手機現在是橫向</div>
+        <div class="w1024">手機現在是橫向且大於1024寬</div>
+        
+        <div class="nohover">你的裝置不支援 hover</div>
+        <div class="hover">你的裝置支援 hover</div>
+        <div class="btn">BUTTON</div>
+    </div>
+    <div class="box">
+        <div class="v">手機現在是直向</div>
+        <div class="h">手機現在是橫向</div>
+        <div class="w1024">手機現在是橫向且大於1024寬</div>
+    </div>
+
+
+
+</body>
+</html>

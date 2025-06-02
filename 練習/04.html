@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Orange Price Calculator</title>
+</head>
+<body>
+  <script>
+    let pricePerKg = 80
+    let quantity = 15
+    let total = pricePerKg * quantity
+
+    if (total > 1000) {
+      total *= 0.7
+    } else if (total > 500) {
+      total *= 0.9
+    }
+
+    document.write(`Total amount: ${total} NT`)
+  </script>
+</body>
+</html>

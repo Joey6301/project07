@@ -1,0 +1,9 @@
+{
+  "device-sm": {
+    "prefix": "media",
+    "body": [
+      "@media screen and (min-width: 768px) {\n\t$0\n}"
+    ],
+    "description": "media query for small devices"
+  }
+}

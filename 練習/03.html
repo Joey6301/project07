@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>橘子價格計算</title>
+</head>
+<body>
+  <script>
+    let pricePerKg = 60 
+    let quantity = 10   
+    let total = pricePerKg * quantity
+    if (total > 500) {
+      total *= 0.9
+    }
+    document.write(`總金額為：${total} 元`)
+  </script>
+</body>
+</html>
