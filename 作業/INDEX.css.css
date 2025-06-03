@@ -329,10 +329,8 @@ table {
 }
 .promise-area .promise-area-bottom {
 	display: flex;
-
-	
 	width: 1000px;
-	margin-left: 136px;
+	margin: 0 auto;
 	text-align: center;
 }
 .promise-area .promise-area-bottom .left-side img {
