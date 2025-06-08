@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     position: relative;
+	height: 1205.7px;
 }
 ol, ul {
 	list-style: none;
@@ -85,12 +86,16 @@ table {
 .right-bar .cart {
 	width: 25px;
 }
+
 .banner {
-    width: 100%;
+	background-color: #FFF9F5;
     height: 425px;
     display: flex;
     justify-content: space-between;
     position: relative;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 .left-banner span {
@@ -210,13 +215,18 @@ table {
 .main .helper a:hover {
     text-decoration: underline;
 }
+.footer-container {
+	background-color: #FFF9F5;
 
+}
 .footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #FFF9F5;
-	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 	height: 370px;
     margin-top: 100px;
 }

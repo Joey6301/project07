@@ -85,10 +85,13 @@ table {
 	width: 25px;
 }
 .banner {
+	background-color: #F1E9DE;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 10px;
 	width: 100%;
 	height: 550px;
-	background-color: #F1E9DE;
 	display: flex;
 	justify-content: space-between;
 }
@@ -118,9 +121,7 @@ table {
 	color:#EF5B12
 }
 .banner .middle-banner {
-	position: absolute;
-	top: 180px;
-	left: 200px;
+	margin-top: 50px;
 }
 .banner .middle-banner h1 {
 	font-size: 70px;
@@ -209,13 +210,14 @@ table {
 .learn-more {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
 	background-color: #F1E9DE;
 	text-align: center;
 	margin-top: 50px;
 	background: linear-gradient(to right, #F1E9DE, transparent);
 	height: 440px;
-	
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 .learn-more .right-side {
@@ -268,6 +270,9 @@ table {
 	justify-content: space-evenly;
 	margin-top: 70px;
 	align-items: center;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .Products-intro img {
 	width: 400px;
@@ -313,6 +318,9 @@ table {
 	width: 100%;
 	height: 900px;
 	background-color: #FAF3EB;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .promise-area-top {
 	display: flex;
@@ -448,6 +456,10 @@ table {
   border: 2px solid #EF5B12;
   box-shadow: 0 4px 10px rgba(29, 70, 105, 0.1);
 }
+.footer-container {
+		background-color: #FFF9F5;
+
+}
 .footer {
 	display: flex;
 	justify-content: space-between;
@@ -455,6 +467,9 @@ table {
 	background-color: #FFF9F5;
 	width: 100%;
 	height: 370px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .footer-left {
 	display: flex;
