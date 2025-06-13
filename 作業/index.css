@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol {
 	list-style: none;
 }
 blockquote, q {
@@ -165,8 +165,37 @@ table {
 	border: 2px solid #F1562D;
 }
 .banner .right-banner img {
-	height: 550px;
+	height: 500px;
+	position: relative;
 }
+.banner .right-banner ul {
+	display: flex;
+	justify-self: center;
+	margin: 0;
+    padding: 0;
+	align-items: center;
+	list-style: none;
+}
+.banner .right-banner ul li {
+  list-style: none;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 5px 5px;
+  opacity: 0.4;
+}
+.banner .right-banner .active {
+	opacity: 1;
+	width: 7px;
+  	height: 7px;
+}
+
+
+
+
+
+
 .product {
 	text-align: center;
 }

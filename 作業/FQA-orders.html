@@ -47,48 +47,91 @@
             <div class="button"><a href="fqa-payment.html">PAYMENT</a></div>
         </div>
     <h3>ORDERS</h3>
-    <div class="faq">
-        <div class="order-item">
+    <div class="fqa">
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>How do I know if my order was successful?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">    
-            </a>
-        </div>
-        <div class="order-item">
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>  
+            
+            </div>
+            <div class="fqa-answer">You will receive a confirmation email once your order is placed.</div>
+        </div>   
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>Can I change or cancel my order?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>  
+            
+            </div>
+            <div class="fqa-answer">Yes, you can change or cancel your order within 1 hour of placing it.</div>
         </div>
-        <div class="order-item">
+
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>I didn’t get an order confirmation. What should I do?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>  
+            
+            </div>
+            <div class="fqa-answer">Please check your spam or junk folder to make sure the confirmation email didn’t end up there.</div>
         </div>
-        <div class="order-item">
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>Can I place an order without creating an account?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>  
+            
+            </div>
+            <div class="fqa-answer">Yes, you can place an order as a guest. However, creating an account allows you to track your orders, save your shipping information, and enjoy a faster checkout experience in the future.</div>
         </div>
-        <div class="order-item">
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>Where can I view my order history?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>  
+            
+            </div>
+            <div class="fqa-answer">You can view your order history by logging into your Fitwell account and going to the “My Orders” section.
+            If you checked out as a guest, please refer to the order confirmation email you received.
+            </div>
         </div>
-        <div class="order-item">
+       <div class="fqa-item">
+            <div class="fqa-question">
             <p>I entered the wrong shipping address. Can I fix it?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>  
+            
+            </div>
+            <div class="fqa-answer">If you entered the wrong shipping address, please contact us immediately at support@fitwell.com.
+                If your order hasn’t been processed yet, we’ll do our best to update the address. However, once the order has shipped, we’re unable to make any changes.
+            </div>
         </div>
-        <div class="order-item">
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>Do you offer gift orders?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>  
+            
+            </div>
+            <div class="fqa-answer">Yes, we offer gift orders!
+                During checkout, you can select the “This is a gift” option and add a personalized message.
+            </div>
         </div>
     </div>
 </div>
@@ -140,5 +183,34 @@
         </div>
     </div>
 </div>
-        
+        <script>
+            const fqaItems = document.querySelectorAll('.fqa-item')
+            fqaItems.forEach(function(item) {
+                const btn = item.querySelector('button')
+                const increment = item.querySelector('.increment')
+                const decrement = item.querySelector('.decrement')
+                const faqAnswer = item.querySelector('.fqa-answer')
+
+                let flag = false
+
+                btn.addEventListener('click', function() {
+                    if(flag === true) {
+                        flag = false
+                        increment.style.display = 'inline-block'
+                        decrement.style.display = 'none'
+                        faqAnswer.style.display = 'none'
+                    } else {
+                        flag = true
+                        increment.style.display = 'none'
+                        decrement.style.display = 'inline-block'
+                        faqAnswer.style.display = 'block'
+                    }
+                })
+            })
+
+
+
+
+            
+        </script>
 </body>

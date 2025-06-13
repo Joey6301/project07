@@ -135,7 +135,7 @@ table {
 }
 .banner .banner-txt {
     background-color: #FAF3EB;
-    width: 790px;
+    width: 891px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +161,7 @@ table {
 }
 .banner img {
     height: 425px;
-    margin-right: 40px;
+
      z-index: 1;
      position: relative;
 }

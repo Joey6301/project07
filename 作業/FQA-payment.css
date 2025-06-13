@@ -273,14 +273,30 @@ table {
     display: inline-block;
     font-size: 60px;
 }
-.main .faq {
+.main .fqa {
     margin-top: 50px;
 }
-.main .order-item {
+.main .fqa-item {
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+    padding-top: 20px;
+}
+.main .fqa-question {
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-    padding-top: 20px;
+
+}
+.main .fqa-question .decrement {
+	display: none;
+}
+.fqa-item .fqa-answer {
+	text-align: left;
+	font-size: 22px;
+	display: none;
+}
+.main .fqa-question button {
+	font-size: 25px;
+	border: none;
+	background-color: white;
+	cursor: pointer;
 }

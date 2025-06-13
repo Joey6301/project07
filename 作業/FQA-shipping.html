@@ -47,30 +47,56 @@
             <div class="button"><a href="fqa-payment.html">PAYMENT</a></div>
         </div>
     <h3>SHIPPING</h3>
-    <div class="faq">
-        <div class="order-item">
+    <div class="fqa">
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>When will my order be shipped?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">    
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+            </div>
+            <div class="fqa-answer">
+                Orders are typically processed and shipped within 1–2 business days after purchase.
+            </div>
         </div>
-        <div class="order-item">
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>How long does delivery take?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
         </div>
-        <div class="order-item">
+        <div class="fqa-answer">Delivery usually takes 3–7 business days, depending on your location and the shipping method selected at checkout.</div>
+        </div>
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>Do you offer same-day delivery?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+            </div>
+            <div class="fqa-answer">
+                Currently, we do not offer same-day delivery.
+                All orders are processed within 1–2 business days and shipped based on the selected delivery method.
+            </div>
         </div>
-        <div class="order-item">
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
             <p>What if my order arrives damaged or incomplete?</p>
-            <a href="#">
-                <img src="../pic/icon-QA.png" alt="sword-icon">
-            </a>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+        </div>
+        <div class="fqa-answer">
+            If your order arrives damaged or items are missing, please contact us at support@fitwell.com within 48 hours of delivery.
+        </div>
         </div>
     </div>
 </div>
@@ -122,5 +148,34 @@
         </div>
     </div>
 </div>
-        
+        <script>
+            const fqaItems = document.querySelectorAll('.fqa-item')
+            fqaItems.forEach(function(item) {
+                const btn = item.querySelector('button')
+                const increment = item.querySelector('.increment')
+                const decrement = item.querySelector('.decrement')
+                const faqAnswer = item.querySelector('.fqa-answer')
+
+                let flag = false
+
+                btn.addEventListener('click', function() {
+                    if(flag === true) {
+                        flag = false
+                        increment.style.display = 'inline-block'
+                        decrement.style.display = 'none'
+                        faqAnswer.style.display = 'none'
+                    } else {
+                        flag = true
+                        increment.style.display = 'none'
+                        decrement.style.display = 'inline-block'
+                        faqAnswer.style.display = 'block'
+                    }
+                })
+            })
+
+
+
+
+            
+        </script>
 </body>

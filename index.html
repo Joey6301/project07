@@ -40,6 +40,13 @@
             </div>
             <div class="right-banner">
                 <img src="./pic/fbe16d4a-67e2-42a1-aff5-127c40ecd7cc.png" alt="">
+                <p>Clean ingredients. Powerful results</p>
+                <ul>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -207,7 +214,27 @@
         </div>
     </div>
     <script>
+        const bannerData = [
+             {url: './pic/fbe16d4a-67e2-42a1-aff5-127c40ecd7cc.png', title: 'Clean ingredients. Powerful results', color: 'black', background: '#F1E9DE'},
+            {url: './pic/banner-workout1.png', title: 'Fuel your performance.', color: 'black', background: 'white'},
+            {url: './pic/banner-workout2.png', title: 'Stronger every day.', color: 'black', background: 'white'},
+            {url: './pic/banner-workout5.png', title: 'We don’t just sell protein. We build performance..', color: 'black', background: 'white'},
+        ]
+        const rightBanner = document.querySelector('.right-banner')
+        const img = document.querySelector('.right-banner img')
+        const p = document.querySelector('.right-banner p')
+        let i = 0
+        setInterval(function(){
+            i++
+            if(i >= bannerData.length) {
+                i = 0
+            }
+            img.src = bannerData[i].url
+            p.innerHTML = bannerData[i].title
+            document.querySelector('.active').classList.remove('active')
+            document.querySelector(`.right-banner ul li:nth-child(${i + 1})`).classList.add('active')
 
+        }, 3000)
     </script>
 </body>
 
