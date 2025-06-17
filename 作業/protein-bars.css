@@ -204,13 +204,19 @@ table {
     width: 946px;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px
+    gap: 5px;
 }
+
 .main .item .product {
     width: 230px;
     border: 1px solid #D9D9D9;
     box-sizing: border-box;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.main .item .product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px  rgba(0, 0, 0, 0.12);
 }
 .main .item .product div:first-child {
     width: 200px;

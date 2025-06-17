@@ -211,6 +211,11 @@ table {
     border: 1px solid #D9D9D9;
     box-sizing: border-box;
     text-align: center;
+    transition: transfrom 0.3s ease, box-shadow 0.3s ease;
+}
+.main .item .product:hover {
+    transform: rotateX(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
 }
 .main .item .product div:first-child {
     width: 200px;
