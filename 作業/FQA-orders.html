@@ -4,25 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FQA-Orders-Page</title>
+    <title>FQA-Page</title>
     <link rel="stylesheet" href="fqa-orders.css">
 </head>
 
 <body>
-    <nav class="top-bar">
+    <div class="top-conatiner">
+        <nav class="top-bar">
         <div class="left-bar">
-            <img src="../pic/07868844-6b22-4176-9229-8c6b7456aaa4-removebg-preview - 複製.png" alt="logo">
-            <a href="../index.html"><span>Home</span></a>
-            <a href="./about-us.html"><span>About us</span></a>
-            <a href="./protein-powder.html"><span>Products</span></a>
-            <a href="./fqa-orders.html"><span>FQA</span></a>
-            <a href="./find-us.html"><span>Find us</span></a>
+            <a href="../index.html"><img src="../pic/07868844-6b22-4176-9229-8c6b7456aaa4-removebg-preview - 複製.png" alt="logo"></a>
+            <a class="left-bar-item" href="../index.html">Home</a>
+            <a class="left-bar-item" href="./about-us.html">ABOUT US</a>
+           <div class="dropdown">
+            <span>PRODUCTS</span>
+            <ul>
+            <li class="dropdown-item"><a href="./protein-powder.html">Protein Powders</a></li>
+            <li class="dropdown-item"><a href="./protein-bars.html">Protein Bars</a></li>
+            <li class="dropdown-item"><a href="./protein-minis.html">Protein Minis</a></li>
+            <li class="dropdown-item"><a href="./protein-drinks.html">Protein Drinks</a></li>
+            </ul>
+            </div>
+            <a class="left-bar-item" href="./fqa-orders.html">FQA</a>
+            <a class="left-bar-item" href="./find-us.html">FIND US</a>
+
         </div>
         <div class="right-bar">
-            <a href="./login.html"><img class="login" src="../pic/icon-park-solid--people.png" alt="login"></a>
-            <a href=""><img class="cart" src="../pic/humbleicons--cart.png" alt="cart"></a>
+            <div class="search-area">
+                <input type="search" placeholder="protein powder">
+                <button id="search"><img src="../pic/search.png" alt="" style="width: 15px;"></button>
+                <ul>
+                    <li><a href="#">Protein powder</a></li>
+                    <li><a href="">Protein bars</a></li>
+                    <li><a href="#">Build muscle</a></li>
+                    <li><a href="#">Weight loss</a></li>
+                </ul>
+            </div>
+             <a href="./login.html"><img class="login" src="../pic/icon-park-solid--people.png" alt="login"></a>
+            <a href="#"><img class="cart" src="../pic/humbleicons--cart.png" alt="cart"></a>
         </div>
     </nav>
+    </div>
     <div class="banner">
         <div class="left-banner">
             <span><a href="#">twitter</a></span>
@@ -40,12 +61,7 @@
         <img src="../pic/question.png" alt="question icon">
     </div>
 <div class="main">
-    <div class="lineup">
-         <span>FAQ CATEGORIES:</span>
-            <div class="button"><a href="fqa-orders.html">ORDERS</a></div>
-            <div class="button"><a href="fqa-shipping.html">SHIPPING</a></div>
-            <div class="button"><a href="fqa-payment.html">PAYMENT</a></div>
-        </div>
+
     <h3>ORDERS</h3>
     <div class="fqa">
         <div class="fqa-item">
@@ -134,6 +150,108 @@
             </div>
         </div>
     </div>
+    <h3>PAYMENT</h3>
+    <div class="fqa">
+        <div class="fqa-item">
+            <div class="fqa-question">
+            <p>What payment methods do you accept?</p>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+            </div>
+            <div class="fqa-answer">We accept major credit cards (Visa, MasterCard, American Express), PayPal, and Apple Pay.
+                All transactions are secure and encrypted for your protection.
+            </div>
+        </div>
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
+            <p>Can I get a receipt or invoice?</p>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+        </div>
+        <div class="fqa-answer">Yes! A digital receipt is automatically sent to your email after purchase.</div>
+        </div>
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
+            <p>My payment didn’t go through. What should I do?</p>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+        </div>
+        <div class="fqa-answer">If your payment didn’t go through, please double-check your card details, available balance, or try a different payment method.</div>
+        </div>
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
+            <p>Can I pay with cash on delivery?</p>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+        </div>
+        <div class="fqa-answer">Currently, we do not offer cash on delivery.</div>
+        </div>
+        
+    </div>
+    <h3>SHIPPING</h3>
+    <div class="fqa">
+        <div class="fqa-item">
+            <div class="fqa-question">
+            <p>When will my order be shipped?</p>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+            </div>
+            <div class="fqa-answer">
+                Orders are typically processed and shipped within 1–2 business days after purchase.
+            </div>
+        </div>
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
+            <p>How long does delivery take?</p>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+        </div>
+        <div class="fqa-answer">Delivery usually takes 3–7 business days, depending on your location and the shipping method selected at checkout.</div>
+        </div>
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
+            <p>Do you offer same-day delivery?</p>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+            </div>
+            <div class="fqa-answer">
+                Currently, we do not offer same-day delivery.
+                All orders are processed within 1–2 business days and shipped based on the selected delivery method.
+            </div>
+        </div>
+        
+        <div class="fqa-item">
+            <div class="fqa-question">
+            <p>What if my order arrives damaged or incomplete?</p>
+            <button>
+                <span class="increment">+</span>
+                <span class="decrement">-</span>
+            </button>
+        </div>
+        <div class="fqa-answer">
+            If your order arrives damaged or items are missing, please contact us at support@fitwell.com within 48 hours of delivery.
+        </div>
+        </div>
+    </div>
 </div>
 <div class="footer-container">
     <div class="footer">
@@ -207,7 +325,22 @@
                     }
                 })
             })
-
+            //search
+            
+        const button = document.querySelector('button')
+        const input = document.querySelector('input')
+        const ul = document.querySelector('.search-area ul')
+        input.addEventListener('focus', function() {
+            ul.style.display = 'block'
+            input.classList.add('search')
+            
+        })
+        input.addEventListener('blur', function() {
+            ul.style.display = 'none'
+            input.classList.remove('search')
+        })
+        //search
+        
 
 
 

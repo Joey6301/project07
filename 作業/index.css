@@ -68,19 +68,38 @@ table {
 	background-color: #F1E9DE;
 	position: relative;
 }
-.toggle {
-	position: absolute;
-	right: 20px;
-	bottom: 15px;
-}
+
 .toggle button {
 	border: none;
-	background-color: white;
+	background-color: rgb(239, 91, 18, 0.3);
+	 border-radius: 50%;
 	width: 25px;
 	height: 25px;
+	font-size: 20px;
+	color: white;
+	transition: all 0.3s ease;
+}
+.toggle .back {
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+.toggle .next {
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+.back:hover, .next:hover {
+  background-color: white;
+  color: #ef5b12;
 }
 .toggle button:first-child {
 	margin-right: 3px;
+}
+.slidefooter {
+	position: absolute;
+	bottom: 10px;
+	left: 45%;
 }
 
 .top-conatiner {
@@ -119,7 +138,7 @@ table {
 .left-bar>a {
 	text-decoration: none;
 	color: black;
-	padding-right: 15px;
+	padding-right: 30px;
 }
 .left-bar span {
 	margin-right: 20px;
@@ -212,7 +231,7 @@ table {
 	cursor: pointer;
 }
 .right-bar ul {
-	/* display: none; */
+	display: none;
 	width: 150px;
 	position: absolute;
 	top: 43px;
@@ -266,8 +285,8 @@ table {
 	margin-left: 50px;
 	margin-top: 250px;
 	position: fixed;
-	top: -100px;
-	left: calc(50% - 650px); 
+	top: -170px;
+	left: calc(50% - 700px); 
 	z-index: 100;
 
 }
@@ -275,7 +294,7 @@ table {
 		
 		transform: rotate(-90deg);
 		margin-right:  50px;
-		font-size: 12px;
+		font-size: 15px;
 		margin: 30px 0;
 }
 .banner .left-banner span:nth-child(2n) {
@@ -294,12 +313,12 @@ table {
 	margin-left: 100px;
 }
 .banner .middle-banner h1 {
-	font-size: 70px;
+	font-size: 60px;
 	line-height: 76px;
 }
 .banner .middle-banner p {
 	margin-top: 40px;
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 40px;
 }
 .banner .middle-banner .button a {
@@ -324,7 +343,7 @@ table {
 	border: 2px solid #F1562D;
 }
 .banner .right-banner img {
-	height: 500px;
+	height: 550px;
 	position: relative;
 }
 .banner .right-banner ul {
@@ -374,7 +393,7 @@ table {
 	/* margin-left: 185px; */
 	justify-content: center;
 	gap: 20px;
-	transition: transform 0.3s ease, box-shadow 0.3s;
+	
 }
 .product-pic div:hover {
 	transform: translateY(-8px);
@@ -384,6 +403,7 @@ table {
 .product-pic>div {
 	gap: 10px;
 	background-color: #FAF3EB;
+	transition: transform 0.3s ease, box-shadow 0.3s;
 }
 .product .protein-bars {
 	width: 210px;
@@ -734,26 +754,5 @@ table {
 	margin-top: 15px;
 	height: 22px;
 }
-@media screen and (max-width:768px) {
-	
-	.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-	.hamburger {
-    display: inline-block;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 10px;
-    cursor: pointer;
-  }
-  .hamburger span {
-    height: 3px;
-	width: 25px;
-    background-color: black;
-    border-radius: 2px;
-  }
 
-}
+	
