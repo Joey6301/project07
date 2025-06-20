@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="作業/index.css">
 </head>
@@ -17,7 +17,7 @@
         <nav class="top-bar">
         <div class="left-bar">
             <a href="./index.html"><img src="./pic/07868844-6b22-4176-9229-8c6b7456aaa4-removebg-preview - 複製.png" alt="logo"></a>
-            <a class="left-bar-item" href="./index.html">Home</a>
+            <a class="left-bar-item" href="./index.html">HOME</a>
             <a class="left-bar-item" href="./作業/about-us.html">ABOUT US</a>
            <div class="dropdown">
             <span>PRODUCTS</span>
@@ -67,7 +67,6 @@
             <div class="right-banner">
                 <img src="./pic/fbe16d4a-67e2-42a1-aff5-127c40ecd7cc.png" alt="">
                 <div class="slidefooter">
-                    <p>Clean ingredients. Powerful results</p>
                     <ul>
                         <li class="active"></li>
                         <li></li>
@@ -256,8 +255,7 @@
         ]
         const rightBanner = document.querySelector('.right-banner')
         const img = document.querySelector('.right-banner img')
-        const p = document.querySelector('.right-banner p')
-        const next = document.querySelector('.next')
+        const next = document.querySelector('.toggle .next')
         let i = 0
         next.addEventListener('click', function() {
              i++
@@ -277,10 +275,8 @@
         })
         function fn() {
              img.src = bannerData[i].url
-            p.innerHTML = bannerData[i].title
-            p.style.color = bannerData[i].color
             rightBanner.style.backgroundColor = bannerData[i].background
-            document.querySelector('.active').classList.remove('active')
+            document.querySelector('.slidefooter .active').classList.remove('active')
             document.querySelector(`.right-banner ul li:nth-child(${i + 1})`).classList.add('active')
         }
         let timerId = setInterval(function() {
