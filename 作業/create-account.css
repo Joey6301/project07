@@ -61,7 +61,7 @@ table {
 	width: 100%; 
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: 0
 
 
 }
@@ -76,59 +76,16 @@ table {
 	vertical-align: middle;
 
 }
-.left-bar>a {
+.left-bar a {
 	text-decoration: none;
 	color: black;
 	padding-right: 15px;
 }
-.left-bar span {
-	margin-right: 20px;
-	cursor: pointer;
-	display: inline-block;
-}
-.left-bar span:hover {
-	color: #EF5B12;	
-}
-.dropdown:hover ul{
-	display: block;
-}
-.left-bar > a:hover {
+.left-bar  a:hover {
 	color: #EF5B12;
 }
-.left-bar > a:first-of-type {
+.left-bar a:first-of-type {
     margin-left: 20px;
-}
-.dropdown {
-  display: inline-block; 
-  position: relative; 
-  cursor: pointer;
-}
-.dropdown span:hover + ul{
-	display:block
-}
-.left-bar ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	list-style: none;
-	z-index: 100;
-	width: 150px;
-	border: 1px solid #EF5B12;
-	background: #fff;
-	box-sizing: border-box;
-	font-size: 12px;
-}
-
-.left-bar ul a {
-	text-decoration: none;
-	color: black;
-	display: block;
-	padding: 7px 5px;
-}
-.left-bar ul a:hover {
-	background-color: #eee;
-
 }
 
 
@@ -201,6 +158,10 @@ table {
 			transition: box-shadow 0.3 ease;
 
         }
+
+
+
+
 
 
 .banner {

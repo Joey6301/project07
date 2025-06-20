@@ -63,6 +63,7 @@ table {
 	top: 0;
 	left: 0
 
+
 }
 .left-bar {
 	margin-top: 20px;
@@ -75,59 +76,16 @@ table {
 	vertical-align: middle;
 
 }
-.left-bar>a {
+.left-bar a {
 	text-decoration: none;
 	color: black;
 	padding-right: 15px;
 }
-.left-bar span {
-	margin-right: 20px;
-	cursor: pointer;
-	display: inline-block;
-}
-.left-bar span:hover {
-	color: #EF5B12;	
-}
-.dropdown:hover ul{
-	display: block;
-}
-.left-bar > a:hover {
+.left-bar  a:hover {
 	color: #EF5B12;
 }
-.left-bar > a:first-of-type {
+.left-bar a:first-of-type {
     margin-left: 20px;
-}
-.dropdown {
-  display: inline-block; 
-  position: relative; 
-  cursor: pointer;
-}
-.dropdown span:hover + ul{
-	display:block
-}
-.left-bar ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	list-style: none;
-	z-index: 100;
-	width: 150px;
-	border: 1px solid #EF5B12;
-	background: #fff;
-	box-sizing: border-box;
-	font-size: 12px;
-}
-
-.left-bar ul a {
-	text-decoration: none;
-	color: black;
-	display: block;
-	padding: 7px 5px;
-}
-.left-bar ul a:hover {
-	background-color: #eee;
-
 }
 
 
@@ -200,6 +158,10 @@ table {
 			transition: box-shadow 0.3 ease;
 
         }
+
+
+
+
 
 .banner {
     height: 425px;
@@ -278,36 +240,39 @@ table {
   flex-direction: column;
   align-items: center;
 }
-.main .lineup {
+.lineup {
     display: flex;
     margin: 50px 0;
     justify-content: center;
     align-items: center;
 }
-.main .lineup span {
+.lineup span {
     font-size: 20px;
     margin-right: 10px;
 }
-.main .lineup .button {
-    border: 2px solid #EF5B12;
-    /* width: 150px; */
 
-    text-align: center;
-    line-height: 32px;
-    margin-right: 7px;
-}
-.main .lineup .button a {
-    display: block;
+ .lineup button  {
     text-decoration: none;
     color: black;
-    height: 32px;
-    transition: all 0.3s ease;
-    padding: 5px 30px;
+    height: 40px;
+	line-height: 40px;
+	border: 2px solid #EF5B12;
+	background-color: white;
+	cursor: pointer;
+	margin-right: 7px;
+	padding: 0px 30px;
+
 }
-.main .lineup .button a:hover {
+.lineup .active {
     background-color: #EF5B12;  
     color: white;              
     border-color: #EF5B12;
+}
+.main-block{
+	display: none
+}
+.main-block.active {
+	display: block;
 }
 .main .item {
     width: 946px;
@@ -373,7 +338,7 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 	height: 370px;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .footer-left {
 	display: flex;

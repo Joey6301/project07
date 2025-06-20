@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protein-bars-Page</title>
+    <title>Protein-Products-Page</title>
     <link rel="stylesheet" href="protein-bars.css">
 </head>
 
@@ -13,17 +13,9 @@
         <nav class="top-bar">
         <div class="left-bar">
             <a href="../index.html"><img src="../pic/07868844-6b22-4176-9229-8c6b7456aaa4-removebg-preview - 複製.png" alt="logo"></a>
-            <a class="left-bar-item" href="../index.html">Home</a>
+            <a class="left-bar-item" href="../index.html">HOME</a>
             <a class="left-bar-item" href="./about-us.html">ABOUT US</a>
-           <div class="dropdown">
-            <span>PRODUCTS</span>
-            <ul>
-            <li class="dropdown-item"><a href="./protein-powder.html">Protein Powders</a></li>
-            <li class="dropdown-item"><a href="./protein-bars.html">Protein Bars</a></li>
-            <li class="dropdown-item"><a href="./protein-minis.html">Protein Minis</a></li>
-            <li class="dropdown-item"><a href="./protein-drinks.html">Protein Drinks</a></li>
-            </ul>
-            </div>
+            <a href="./protein-bars.html">PRODUCTS</a>
             <a class="left-bar-item" href="./fqa-orders.html">FQA</a>
             <a class="left-bar-item" href="./find-us.html">FIND US</a>
 
@@ -60,46 +52,191 @@
         </div>
         <img src="../pic/open.png" alt="A woman">
     </div>
-    <div class="main">
+    <div class="main-area">
         <div class="lineup">
-            <span>SHOP: BY:</span>
-            <div class="button"><a href="protein-bars.html">PROTEIN BARS</a></div>
-            <div class="button"><a href="protein-minis.html">PROTEIN MINIS</a></div>
-            <div class="button"><a href="protein-drinks.html">PROTEIN DRINKS</a></div>
-            <div class="button"><a href="protein-powder.html">PRONTEIN POWDERS</a></div>
+            <span>SHOP BY:</span>
+            <button class="active" data-id="0">PROTEIN BARS</button>
+            <button data-id="1">PROTEIN MINIS</button>
+            <button data-id="2">PROTEIN DRINKS</button>
+            <button data-id="3">PRONTEIN POWDERS</button>
         </div>
-        <div class="item">
-            <div class="product one">
-                <div><img style="width: 122px; transform: translate(0, 5px)" src="../pic/FITWELL Protein Bar–Chocolate.png" alt="Protein Bar–Chocolate"></div>    
-                <div class="txt">
-                    <h3>FITWELL Protein Bar<br>–Chocolate</h3>
-                    <p>$1.29</p>
-                    <button>Add Cart</button>  
+        <div class="main-block active" id="protein-bars">
+            <div class="main">
+                <div class="item">
+                    <div class="product">
+                        <div><img style="width: 122px; transform: translate(0, 5px)" src="../pic/FITWELL Protein Bar–Chocolate.png" alt="Protein Bar–Chocolate"></div>    
+                        <div class="txt">
+                            <h3>FITWELL Protein Bar<br>–Chocolate</h3>
+                            <p>$1.29</p>
+                            <button>Add Cart</button>  
+                        </div>
+                        
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 120px; transform: translate(0, 0px);" src="../pic/FITWELL Protein Bar Strawberry.png" alt="Protein Bar Strawberry"></div>
+                        <div class="txt">
+                            <h3>FITWELL Protein Bar<br>–Strawberry</h3>
+                            <p>$1.29</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 120px; transform: translate(0, 3px)" src="../pic/FITWELL Protein Bar–Cookies&Cream.png" alt="Protein Bar–Cookies&Cream"></div>
+                        <div class="txt">
+                            <h3>FITWELL Protein Bar<br>–Cookies & Cream</h3>
+                            <p>$1.29</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 120px; transform: translate(0, 5 px)" src="../pic/Banana.png" alt="Protein Bar–banana"></div>
+                        <div class="txt">
+                            <h3>FITWELL Protein Bar<br>–Banana</h3>
+                            <p>$1.29</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
                 </div>
-                
             </div>
-            <div class="product">
-                <div><img style="width: 120px; transform: translate(0, 0px);" src="../pic/FITWELL Protein Bar Strawberry.png" alt="Protein Bar Strawberry"></div>
-                <div class="txt">
-                    <h3>FITWELL Protein Bar<br>–Strawberry</h3>
-                    <p>$1.29</p>
-                    <button>Add Cart</button>  
+        </div>
+        <div class="main-block">
+            <div class="main">
+                <div class="item">
+                    <div class="product one">
+                        <div><img style="width: 170px; transform: translate(0, 30px)" src="../pic/FITWELL Protein Mini – Chocolate.png" alt="Protein Mini – Chocolate"></div>    
+                        <div class="txt">
+                            <h3>FITWELL Protein Mini<br>–Chocolate</h3>
+                            <p>$3.50</p>
+                            <button>Add Cart</button>  
+                        </div>
+                        
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 193px; transform: translate(0, 50px);" src="../pic/FITWELL Protein Mini – Milk Tea.png" alt="Daily Boost Shot"></div>
+                        <div class="txt">
+                            <h3>FITWELL Protein Mini<br>–Milk Tea</h3>
+                            <p>$3.50</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 160px; transform: translate(0, 35px)" src="../pic/Fitwell protein mini-payama.png" alt="protein mini-payama"></div>
+                        <div class="txt">
+                            <h3>FITWELL Protein Mini<br>–Papaya</h3>
+                            <p>$3.50</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="product">
-                <div><img style="width: 120px; transform: translate(0, 3px)" src="../pic/FITWELL Protein Bar–Cookies&Cream.png" alt="Protein Bar–Cookies&Cream"></div>
-                <div class="txt">
-                    <h3>FITWELL Protein Bar<br>–Cookies & Cream</h3>
-                    <p>$1.29</p>
-                    <button>Add Cart</button>  
+        </div>
+        <div class="main-block ">
+            <div class="main">
+                <div class="item">
+                    <div class="product one">
+                        <div><img style="width: 140px; transform: translate(0, 5px)" src="../pic/Balance & Rebuild.png" alt="Balance & Rebuild"></div>    
+                        <div class="txt">
+                            <h3>Balance & Rebuild</h3>
+                            <p>$3.20</p>
+                            <button>Add Cart</button>  
+                        </div>
+                        
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 190px; transform: translate(0, 5px);" src="../pic/Daily Boost Shot.png" alt="Daily Boost Shot"></div>
+                        <div class="txt">
+                            <h3>Daily Boost Shot</h3>
+                            <p>$3.41</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 135px; transform: translate(0, 2px)" src="../pic/Choco Strength Fuel .png" alt="Choco Strength Fuel"></div>
+                        <div class="txt">
+                            <h3>Choco Strength Fuel</h3>
+                            <p>$2.85</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 140px;transform: translate(0, -1px)" src="../pic/Vanila Strength Fuel.png" alt="Vanila Strength Fuel"></div>
+                        <div class="txt">
+                            <h3>Vanila Strength Fuel</h3>
+                            <p>$5.50</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="product">
-                <div><img style="width: 120px; transform: translate(0, 5 px)" src="../pic/Banana.png" alt="Protein Bar–banana"></div>
-                <div class="txt">
-                    <h3>FITWELL Protein Bar<br>–Banana</h3>
-                    <p>$1.29</p>
-                    <button>Add Cart</button>  
+        </div>
+        <div class="main-block">
+            <div class="main">
+                <div class="item">
+                    <div class="product one">
+                        <div><img style="width: 140px;" src="../pic/morning energy boost.png" alt="morning energy boost"></div>    
+                        <div class="txt">
+                            <h3>Morning Energy Boost</h3>
+                            <p>$30.24</p>
+                            <button>Add Cart</button>  
+                        </div>
+                        
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 190px; transform: translate(0, 10px);" src="../pic/Daily Plant Boost.png" alt="Daily Plant Boost"></div>
+                        <div class="txt">
+                            <h3>Daily Plant Boost</h3>
+                            <p>$53</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 135px; transform: translate(0, 9px)" src="../pic/Cocoa Power Blend.png" alt="Cocoa Power Blend"></div>
+                        <div class="txt">
+                            <h3>Cocoa Power Blend</h3>
+                            <p>$21.85</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 140px;transform: translate(0, 5px)" src="../pic/Vanilla Active Fuel.png" alt="Vanilla Active Fuel"></div>
+                        <div class="txt">
+                            <h3>Vanilla Active Fuel</h3>
+                            <p>$57.24</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 175px;transform: translate(0, 20px)" src="../pic/Clean Daily Shake.png" alt="Clean Daily Shake"></div>
+                        <div class="txt">
+                            <h3>Clean Daily Shake</h3>
+                            <p>$30.24</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 175px;transform: translate(0, 20px)" src="../pic/Macha Calm Formula.png" alt="Macha Calm Formula"></div>
+                        <div class="txt">
+                            <h3>Macha Calm Formula</h3>
+                            <p>$53</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 175px; transform: translate(0, 22px)" src="../pic/Daily Lean Support.png" alt="Daily Lean Support"></div>
+                        <div class="txt">
+                            <h3>Daily Lean Support</h3>
+                            <p>$21.85</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div><img style="width: 130px;transform: translate(0, 10px)" src="../pic/Noon Balance Shake.png" alt="Noon Balance Shake"></div>
+                        <div class="txt">
+                            <h3>Noon Balance Shake</h3>
+                            <p>$57.24</p>
+                            <button>Add Cart</button>  
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,6 +301,20 @@
         input.addEventListener('blur', function() {
             ul.style.display = 'none'
             input.classList.remove('search')
+        })
+        //main
+        const lineup = document.querySelector('.lineup')
+        const mainBlocks = document.querySelectorAll('.main-block')
+        lineup.addEventListener('click', function(e) {
+            if(e.target.tagName === 'BUTTON') {
+                document.querySelector('.lineup .active').classList.remove('active')
+                e.target.classList.add('active')
+
+                const i = +e.target.dataset.id
+                document.querySelector('.main-block.active').classList.remove('active')
+                mainBlocks[i].classList.add('active')
+            }
+            
         })
     </script>
 </body>
