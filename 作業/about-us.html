@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <button id="menuToggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+    <div id="overlay"></div>
     <div class="top-conatiner">
         <nav class="top-bar">
         <div class="left-bar">
@@ -149,7 +155,7 @@
     </div>
 </div>
     <script>
-        const button = document.querySelector('button')
+         const button = document.querySelector('button')
         const input = document.querySelector('input')
         const ul = document.querySelector('.search-area ul')
         input.addEventListener('focus', function() {
@@ -161,6 +167,22 @@
             ul.style.display = 'none'
             input.classList.remove('search')
         })
+        //區隔
+        const menuToggle = document.getElementById('menuToggle');
+    const leftBar = document.querySelector('.left-bar');
+    const overlay = document.getElementById('overlay');
+
+    function toggleMenu() {
+        menuToggle.classList.toggle('active');
+        leftBar.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
+
+    // 點擊漢堡按鈕時開關選單
+    menuToggle.addEventListener('click', toggleMenu);
+
+    // 點擊遮罩區域時關閉選單
+    overlay.addEventListener('click', toggleMenu);
     </script>
 </body>
 
