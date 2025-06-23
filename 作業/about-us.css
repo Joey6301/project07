@@ -382,24 +382,18 @@ table {
 	height: 22px;
 }
 .hamburger {
-    display: none; /* 電腦版預設隱藏 */
+    display: none; 
 }
-/* ========================================= */
-/*      RWD for Mobile (max-width: 768px)    */
-/* ========================================= */
-/* ========================================= */
-/*      RWD for Mobile (max-width: 768px)    */
-/* ========================================= */
+
 @media (max-width: 768px) {
 
-    /* --- Body & General Layout --- */
     body {
         position: static; 
     }
 
-    /* --- Hamburger Menu --- */
+
     .hamburger {
-        display: block; /* 在手機版顯示按鈕 */
+        display: block;
         position: fixed;
         top: 25px;
         right: 20px;
@@ -429,7 +423,6 @@ table {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /* --- Mobile Navigation Menu (滑出的選單) --- */
     .left-bar {
         position: fixed;
         top: 0;
@@ -442,16 +435,16 @@ table {
         padding: 80px 20px 20px;
         box-sizing: border-box;
         box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-        transform: translateX(-100%); /* 預設藏在左邊 */
+        transform: translateX(-100%); 
         transition: transform 0.3s ease-in-out;
         z-index: 1001;
-        margin-top: 0; /* 覆蓋桌機版的 margin-top */
+        margin-top: 0; 
     }
     .left-bar.active {
-        transform: translateX(0); /* 點擊後滑入 */
+        transform: translateX(0); 
     }
     .left-bar a {
-        display: block; /* 確保連結是塊級元素 */
+        display: block; 
         padding: 15px 10px;
         width: 100%;
         font-size: 16px;
@@ -464,7 +457,6 @@ table {
         width: 150px;
     }
 
-    /* --- Overlay (背景遮罩) --- */
     #overlay {
         display: none;
         position: fixed;
@@ -478,21 +470,20 @@ table {
     #overlay.active {
         display: block;
     }
-    
-    /* --- Top Bar / Header --- */
+
     .top-bar {
         padding: 0 15px;
         height: 80px;
         align-items: center;
     }
     .right-bar {
-        margin-right: 60px; /* 與漢堡按鈕保持距離 */
+        margin-right: 60px;
     }
     .search-area {
-        display: none; /* 手機版隱藏搜尋框 */
+        display: none; 
     }
 
-    /* --- Banner Section --- */
+
     .banner {
         width: 100%; 
         flex-direction: column;
@@ -514,7 +505,7 @@ table {
     .banner .banner-txt p { font-size: 16px; text-align: center; }
     .banner img { width: 100%; height: auto; }
 
-    /* --- Main Content Sections --- */
+
     .main {
         width: 100%;
         padding: 0 20px;
@@ -551,7 +542,7 @@ table {
         font-size: 16px;
     }
 
-    /* --- Footer Section --- */
+
     .footer {
         flex-direction: column;
         height: auto;
