@@ -156,6 +156,10 @@ table {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(204, 204, 204, 0.3);
+  font-size: 7px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 15px;
 }
 .elavater li:hover {
 	transform: scale(2);
